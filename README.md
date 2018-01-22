@@ -6,9 +6,11 @@
 
 ---
 
-### 通知适配 ###
+### 通知 ###
 Android O新增通知渠道，其允许为要显示的每种通知类型创建用户可自定义的渠道。用户界面将通知渠道称之为通知类别。将targetSdkVersion提到26以上的话，就必须使用NotificationCompat.Builder(context, channelId)（有两个参数的）并且channelId不能为null。
+
 **1.创建NotificationChannel**
+
 如果你需要发送属于某个自定义渠道的通知，你需要在发送通知前创建自定义通知渠道，示例如下：
 
 ```
